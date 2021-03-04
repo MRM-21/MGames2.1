@@ -1,0 +1,127 @@
+body {
+  background: #5BAEFF;
+  font-family: Muli, sans-serif;
+  font-weight: bold;
+}
+
+main {
+  max-width: 610px;
+  margin: auto;
+}
+
+h1{
+  text-align: center;
+  color: #F3E8EE;
+  font-size: 30px;
+}
+
+.controls {
+  text-align: center;
+}
+
+.board {
+    width: 540px;
+    height: 540px;
+    margin: 20px;
+    border: 25px solid black;
+}
+
+.cell {
+    float: left;
+    width: 25px;
+    height: 25px;
+    background-color: #103877;
+    border: 1px solid #103877;
+    font-size:50px;
+    text-align:center;
+    display: table-cell;
+    vertical-align:middle;
+    line-height: 50px;
+}
+
+.snake {
+  background-color: #CCFF00;
+}
+
+.food {
+  background-color: #FF4040;
+}
+
+/* Buttons */
+.button {
+  display: inline-block;
+  padding: 15px 25px;
+  font-size: 24px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  color: black;
+  background-color: #CCFF00;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px #999;
+}
+
+.button:hover {background-color: #FF4040}
+
+.button:active {
+  background-color: #FF4040;
+  box-shadow: 0 5px #999;
+  transform: translateY(4px);
+}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed;
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: #5BAEFF;
+  border-radius: 15px;
+  margin: 15% auto; /* 15% from the top and centered */
+  padding: 20px;
+  border: 10px solid black;
+  width: 40%; /* Could be more or less, depending on screen size */
+  text-align: center;
+}
+
+/* The Close Button */
+.close {
+  color: black;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #FF4040;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+#message {
+  font-size: 18pt;
+  font-weight: bold;
+  color: #F3E8EE;
+}
+footer {
+  text-align: center;
+  color: #103877;
+  margin-top: 40px;
+}
+
+footer a {
+  color: #F3E8EE;
+}
